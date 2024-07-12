@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"encoding/base64"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("It's a new car")
+	// process the logic
+	answer, _ := base64.StdEncoding.DecodeString("SXQncyBhIG5ldyBjYXIK")
+
+	// print the answer
+	fmt.Println(string(answer))
 }
